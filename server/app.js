@@ -28,10 +28,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(session({
-   key: 'sessionid',
-   secret: 'Domo Arigato',
-   resave: false,
-   saveUninitialized: false,
+  key: 'sessionid',
+  secret: 'Domo Arigato',
+  resave: false,
+  saveUninitialized: false,
 }));
 
 app.engine('handlebars', expressHandlebars.engine({ defaultLayout: '' }));
